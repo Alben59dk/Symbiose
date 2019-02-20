@@ -1,0 +1,151 @@
+@charset "utf-8";
+* {
+  box-sizing: border-box;
+}
+header,
+section,
+footer,
+aside,
+nav,
+main,
+article,
+figure {
+  display: block;
+}
+div,
+header,
+section,
+footer,
+aside,
+nav,
+main,
+article,
+figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+ul,
+li,
+figure,
+figcaption,
+class,
+img {
+  margin: 0;
+  padding: 0;
+}
+img,
+object,
+embed,
+canvas,
+video,
+audio,
+picture,
+svg {
+  max-width: 100%;
+  height: auto;
+}
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+}
+.clear {
+  clear: both;
+}
+/* center pour centrer les elements dans ma grille 960, tout en gardant l'arriere plan en 100% */
+div.center {
+  width: 960px;
+  margin: 0 auto;
+}
+header {
+  background: url(../img/bgheader.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 50px 0;
+}
+header h1 {
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 500;
+  color: #283148;
+  margin: 45px 90px;
+}
+section.intro {
+  background-color: #e9eec9;
+  color: #e9eec9;
+  padding: 60px 0;
+}
+section.intro h2 {
+  line-height: 26px;
+  font-size: 54px;
+  color: #bbbbbb;
+}
+section.intro p {
+  line-height: 26px;
+  font-size: 16px;
+  color: #bbbbbb;
+  margin: 70px 0;
+}
+section.intro article {
+  background-color: #283148;
+  width: 300px;
+  float: left;
+  margin: 10px;
+  padding-bottom: 25px;
+}
+section.intro article h3 {
+  font-size: 26px;
+  line-height: 26px;
+  font-weight: 500;
+  margin: 35px 0;
+}
+section.intro article a {
+  color: #e9eec9;
+  text-transform: uppercase;
+  border-top: solid 1px #e9eec9;
+  border-bottom: solid 1px #e9eec9;
+  text-decoration: none;
+  padding: 5px 75px;
+}
+section.histoire {
+  background-color: #bbbbbb;
+  color: #283148;
+  padding: 70px 0;
+}
+section.histoire h2 {
+  color: #e9eec9;
+  font-size: 54px;
+  line-height: 26px;
+  letter-spacing: 20px;
+  font-weight: 300;
+  padding-bottom: 50px;
+}
+section.histoire p {
+  line-height: 26px;
+  font-weight: 400;
+  text-align: left;
+}
+section.histoire img {
+  float: left;
+  margin-bottom: 40px;
+  margin-right: 25px;
+}
+footer {
+  background-color: #913535;
+  padding: 60px 0;
+  text-align: left;
+}
+footer img {
+  width: 220px;
+}
+footer p {
+  color: #e9eec9;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 26px;
+}

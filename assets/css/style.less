@@ -1,0 +1,128 @@
+@charset "utf-8";
+
+//variable
+@colorA: #283148;
+@colorB: #913535;
+@colorC: #bbbbbb;
+@colorD: #e9eec9;
+
+* {
+    box-sizing: border-box;
+}
+header, section, footer, aside, nav, main, article, figure {
+    display: block; 
+}
+div, header, section, footer, aside, nav, main, article, figure, h1, h2, h3, h4, h5, h6, p, a, ul, li, figure, figcaption, class, img { 
+	margin: 0;
+	padding: 0;
+}
+img, object, embed, canvas, video, audio, picture, svg {
+	max-width: 100%;
+	height: auto;
+}
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+.clear {
+	clear: both;
+}
+
+/* center pour centrer les elements dans ma grille 960, tout en gardant l'arriere plan en 100% */
+div.center {
+    width: 960px;
+    margin: 0 auto;
+}
+
+header {
+    background: url(../img/bgheader.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px 0;
+    h1 {
+        font-size: 16px;
+        line-height: 26px;
+        font-weight: 500;
+        color: @colorA;
+        margin: 45px 90px;
+    }
+}
+
+section.intro {
+    background-color: @colorD;
+    color: @colorD;
+    padding: 60px 0;
+    h2 {
+        line-height: 26px;
+        font-size: 54px;
+        color: @colorC;
+    }
+    p {
+        line-height: 26px;
+        font-size: 16px;
+        color: @colorC;
+        margin: 70px 0;
+    }
+    article {
+        background-color: @colorA;
+        width: 300px;
+        float: left; 
+        margin: 10px;
+        padding-bottom: 25px;
+
+        h3 {
+            font-size: 26px;
+            line-height: 26px;
+            font-weight: 500;
+            margin: 35px 0;
+        }
+        a {
+            color: @colorD;
+            text-transform: uppercase;
+            border-top: solid 1px @colorD;
+            border-bottom: solid 1px @colorD;
+            text-decoration: none;
+            padding: 5px 75px;
+        }
+    }
+}
+
+section.histoire {
+    background-color: @colorC;
+    color: @colorA;
+    padding: 70px 0;
+    h2 {
+        color: @colorD;
+        font-size: 54px;
+        line-height: 26px;
+        letter-spacing: 20px;
+        font-weight: 300;
+        padding-bottom: 50px;
+    }
+    p{
+        line-height: 26px;
+        font-weight: 400;
+        text-align: left;
+    }
+    img {
+        float: left;
+        margin-bottom: 40px;
+        margin-right: 25px;
+    }
+}
+
+footer {
+    background-color: @colorB;
+    padding: 60px 0;
+    text-align: left;
+    img {
+        width: 220px;
+    }
+    p {
+        color: @colorD;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 26px;
+    }
+}
